@@ -33,6 +33,11 @@ public class LinkedList {
         previousNode.next = newNode;
         newNode.next = temp;
     }
+    public Node pop(){
+        Node temp = this.head;
+        this.head = this.head.next;
+        return temp;
+    }
     public void print() {
         if (head == null) {
             System.out.println("Linked List is Empty");

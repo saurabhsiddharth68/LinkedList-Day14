@@ -10,7 +10,7 @@ public class LinkedlistMain {
                 "Enter 2 to add the data at the end\n Enter 3 to add the data at middle\n"
                 + "Enter 4 to delete the first element\n Enter 5 to delete the Last element\n"
                 + "Enter 6 to find index number and node based on value\n Enter 7 to insert data at given node\n"
-                + "Enter 8 to delete data after given node\n ");
+                + "Enter 8 to delete data after given node\n Enter 9 to Sort the data in LinkedList");
         switch(scanner.nextInt()) {
             case 1:
                 operation.addDataAtStart();
@@ -36,6 +36,8 @@ public class LinkedlistMain {
             case 8:
                 operation.deleteAfterNodeAfterSearchNode();
                 break;
+            case 9:
+                operation.sortList();
         }
         scanner.close();
     }
